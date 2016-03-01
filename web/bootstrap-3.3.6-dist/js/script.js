@@ -5,5 +5,46 @@ $(document).ready(function(){
   $('.searchbar').load("searchbar.html");
   $('.gallery').load("gallery.html");
   $('.footer').load("footer.html");
+  
+  /*this part is the mem login panel. the corresponding panel is goint to be
+   *loaded when you click each tab.
+   */
+  $('#on_hold').click(function(){
+      $('.member_panel').load("member_panel/on_hold.html");
+  });
+  
+  $('#checked_out').click(function(){
+      $('.member_panel').load("member_panel/checked_out.html");
+  });
+  
+  $('#balance').click(function(){
+      $('.member_panel').load("member_panel/balance.html");
+  });
+  
+  $('#borrowing_history').click(function(){
+      $('.member_panel').load("member_panel/borrowing_history.html");
+  });
+  
+  //this part scripts is for admin panel display
+  //message panel will be displayed innitially
+  $('.admin_panel').load("admin_panel/messages.html");
+  
+  $('#messages').click(function(){
+      $('.admin_panel').load("admin_panel/messages.html");
+  });
+  
+  $('#best_seller_list').click(function(){
+      $('.admin_panel').load("admin_panel/best_seller_list.html");
+  });
+  
+  $('#manage_users').click(function(){
+      $('.admin_panel').load("admin_panel/manage_users.html");
+  });
+  
+  $('#manage_books').click(function(){
+      $('.admin_panel').load("admin_panel/manage_books.html");
+  });
+  
+  
 });
 
