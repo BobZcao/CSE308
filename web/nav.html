@@ -59,11 +59,124 @@ and open the template in the editor.
                         <li><a href="#">FAQ</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Login</a></li>                        
-                        <li><a href="#">Sign up</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#login-modal"><span class="glyphicon glyphicon-user login"></span> Login</a></li>                        
+                        <li><a href="#" data-toggle="modal" data-target="#signup-modal">Sign up</a></li>
                     </ul>
 
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
+    
+	<!-- BEGIN # MODAL LOGIN -->
+	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true"
+		style="display: none;">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- Begin # DIV Form -->
+				<div id="div-forms">
+
+					<!-- Begin # Login Form -->
+					<form id="login-form" action="login.jsp" method="post">
+						<div class="modal-body">
+
+							<input id="login_username" class="form-control" type="text"
+								name="lg_username" placeholder="Username" required> <input
+								id="login_password" class="form-control" type="password"
+								name="lg_password" placeholder="Password" required>
+							<div class="checkbox">
+								<label> <input type="checkbox"> Remember me
+								</label>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<div>
+								<button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+							</div>
+							
+						</div>
+					</form>
+					<!-- End # Login Form -->
+                                </div>
+				<!-- End # DIV Form -->
+
+			</div>
+		</div>
+	</div>
+
+
+<div class="modal fade" id="signup-modal" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true"
+		style=" display: none">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- Begin # DIV Form -->
+				<div id="div-forms">
+
+					<!-- Begin | Register Form -->
+					<form id="register-form" action=""
+						method="post" >
+						<div class="modal-body">
+							<input id="register_username" class="form-control" type="text"
+								placeholder="Username" name= "reg_username" required> 
+                                                        <input
+								id="register_password" class="form-control" type="password"
+								placeholder="Password" name= "reg_password" required> 
+                                                        <input name="reg_password_confirm"
+								id="register_confirm_password" class="form-control"
+								type="password" placeholder="Confirm Password" required>
+							<input id="register_email"  name="reg_email" class="form-control" type="text"
+								placeholder="E-Mail" required>
+                                                        <input id="first_name" name="reg_firstname"
+								class="form-control" type="text" placeholder="First Name"
+								required> 
+                                                      
+						<input type="text" class="form-control" id="reg_ssn" name="reg_ssn" placeholder="SSN"
+                                                       required>
+					
+                                                        <input id="last_name" class="form-control" name="reg_lastname"
+								type="text" placeholder="Last Name" required>
+                                                        <input name="reg_address"
+								id="address" class="form-control" type="text"
+								placeholder="Address" required>
+                                                        <input id="city" name="reg_city"
+								class="form-control" type="text" placeholder="City" required>
+							<input id="state" class="form-control" type="text" name="reg_state"
+								placeholder="State" required> 
+                                                        <input id="zipcode" name="reg_zipcode"
+								class="form-control" type="text" placeholder="Zipcode" required>
+							<input id="telephone" class="form-control" type="text" name="reg_telephone"
+								placeholder="Telephone" required>
+                                                        <input
+								id="credit_card_number" class="form-control" type="text"
+								placeholder="Credit Card Number" name="reg_cardnum" required>
+
+						</div>
+						<div class="modal-footer">
+							<div>
+								<button type="submit" class="btn btn-primary btn-lg btn-block">Sign up</button>
+							</div>
+			
+						</div>
+					</form>
+					<!-- End | Register Form -->
+
+				</div>
+				<!-- End # DIV Form -->
+
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Customized JS -->
+	<script src="js/popup.js"></script>
+    
 </html>

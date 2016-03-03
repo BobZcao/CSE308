@@ -28,7 +28,7 @@ $(document).ready(function(){
   //this part scripts is for admin panel display
   //message panel will be displayed innitially
   $('.admin_panel').load("admin_panel/messages.html");
-  
+  $('.publisher_panel').load("publisher_panel/edit_book_description.html");
   $('#messages').click(function(){
       $('.admin_panel').load("admin_panel/messages.html");
   });
@@ -44,6 +44,13 @@ $(document).ready(function(){
   $('#manage_books').click(function(){
       $('.admin_panel').load("admin_panel/manage_books.html");
   });
+  $('#book_application').click(function(){
+      $('.publisher_panel').load("publisher_panel/book_application.html");
+  });
+   $('#edit_book_description').click(function(){
+      $('.publisher_panel').load("publisher_panel/edit_book_description.html");
+  });
+  
   
   
 });
