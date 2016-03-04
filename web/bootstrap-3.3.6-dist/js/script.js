@@ -45,6 +45,23 @@ $(document).ready(function(){
       $('.admin_panel').load("admin_panel/manage_books.html");
   });
   
+  //this part is loading the faculty panel display  
+  $('.faculty_panel').load("faculty_panel/messages.html");
+  
+  $('#faculty_messages').click(function(){
+      $('.faculty_panel').load("faculty_panel/messages.html");
+  });
+  
+  $('#faculty_best_seller_list').click(function(){
+      $('.faculty_panel').load("admin_panel/best_seller_list.html");
+  });
+  
+  $('#faculty_manage_users').click(function(){
+      $('.faculty_panel').load("faculty_panel/manage_users.html");
+  });
+  
+  $('#faculty_manage_books').click(function(){
+      $('.faculty_panel').load("faculty_panel/manage_books.html");
+  });
   
 });
-
